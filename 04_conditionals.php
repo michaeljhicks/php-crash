@@ -46,7 +46,9 @@ if ($t < 12) {
 }
 
 // Check if an array is empty
-// The isset() function will generate a warning or e-notice when the variable does not exists. The empty() function will not generate any warning or e-notice when the variable does not exists.
+// The isset() function will generate a warning or e-notice when the variable 
+// does not exists. The empty() function will not generate any warning or 
+// e-notice when the variable does not exists.
 
 $posts = [];
 
