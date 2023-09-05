@@ -1,16 +1,15 @@
 <?php
 
-function registerUser($email) {
-    echo $email . ' registered';
-}
+$numbers = range(1, 20);
 
-// registerUser('Brad');
+$new_numbers = array_map(function($number) {
+    return "Number $number";
+}, $numbers);
 
-function sum($n1, $n2) {
-    return $n1 + $n2;
-}
+$less_thank_10 = array_filter($numbers, fn($number) => $number < 11);
+// print_r($less_thank_10);
 
-$number = sum(5,5);
-echo $number;
+$sum = array_reduce($numbers, fn($carry, $number) => $carry + $number);
+print_r($sum);
 
 ?>
