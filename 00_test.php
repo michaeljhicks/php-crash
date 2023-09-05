@@ -1,19 +1,23 @@
 <?php
 
-$posts = ['first post'];
+$posts = ['First post', 'Second post', 'Third post'];
 
-$fave_color = 'red';
+// for($x = 0; $x < count($posts);$x++) {
+//     echo "$posts[$x] <br>";
+// }
 
-switch($fave_color) {
-    case 'red':
-        echo 'Your favorite color is red';
-        break;
-    case 'blue':
-        echo 'Your favorite color is blue';
-        break; 
-    case 'green':
+// foreach($posts as $index => $post) {
+//     echo $index . ' - ' . $post . '<br>';
+// }
 
+$person = [
+    'first_name' => 'Brad', 
+    'last_name' => 'Traversy', 
+    'email' => 'brad@gmail.com', 
+];
+
+foreach($person as $key => $value) {
+    echo "$value - $key <br>";
 }
-
 
 ?>
