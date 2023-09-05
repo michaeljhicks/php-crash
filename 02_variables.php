@@ -28,26 +28,26 @@ $age = 40; // Integer
 $hasKids = true; // Boolean
 $cashOnHand = 10.5; //Float
 
-var_dump($cashOnHand);
+// var_dump($cashOnHand);
 
 /* --- Adding variables to strings -- */
 
 // Double quotes can be used to add variables to strings
-echo "$name is $age years old";
+// echo "$name is $age years old";
 
 // Better to do this
-echo "${name} is ${age} years old";
+// echo "${name} is ${age} years old";
 
 // Concatenate Strings
 
-echo '<h3>' . $name . ' is ' . $age . ' years old</h3>';
+// echo '<h3>' . $name . ' is ' . $age . ' years old</h3>';
 
 // Arithmetic Operators
 
-echo 5 + 5;
-echo 10 - 6;
-echo 5 * 10;
-echo 10 / 2;
+// echo 5 + 5;
+// echo 10 - 6;
+// echo 5 * 10;
+// echo 10 / 2;
 
 // Constants - Cannot be changed
 define('HOST', 'localhost');
